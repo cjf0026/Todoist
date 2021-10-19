@@ -1,0 +1,65 @@
+<div class="collapse collapse-horizontal show" id="collapseSidebar">
+    <ul class="nav flex-column bg-dark">
+        <li class="nav-item">
+            <button [disabled]="disableBtns ? true : false" type="button" class="btn btn-dark" aria-current="page">
+                <a class="nav-link text-white" routerLink="/inbox">Inbox</a>
+            </button>
+        </li>
+        <li class="nav-item">
+            <button [disabled]="disableBtns ? true : false" type="button" class="btn btn-dark">
+                <a class="nav-link text-white" routerLink="/today">Today</a>
+            </button>
+        </li>
+        <li class="nav-item">
+            <button [disabled]="disableBtns ? true : false" type="button" class="btn btn-dark">
+                <a class="nav-link text-white" routerLink="/upcoming">Upcoming</a>
+            </button>
+        </li>
+        <li class="nav-item">
+            <button [disabled]="disableBtns ? true : false" class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
+                Projects
+            </button>
+            <div class="collapse show" id="collapseProjects">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <button [disabled]="disableBtns ? true : false" type="button" class="btn btn-dark">
+                            <a class="nav-link text-white" routerLink="/welcome">Welcome👋</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button [disabled]="disableBtns ? true : false" type="button" class="btn btn-dark">
+                            <a class="nav-link text-white" routerLink="/try-boards">Try Boards</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <button [disabled]="disableBtns ? true : false" class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLabels" aria-expanded="false" aria-controls="collapseLabels">
+                Labels
+            </button>
+            <div class="collapse" id="collapseLabels">
+                <p class="text-white">Your list of labels will show up here.</p>
+            </div>
+        </li>
+        <li class="nav-item">
+            <button [disabled]="disableBtns ? true : false" class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters">
+                Fliters
+            </button>
+            <div class="collapse" id="collapseFilters">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <button [disabled]="disableBtns ? true : false" type="button" class="btn btn-dark">
+                            <a class="nav-link text-white" href="#">Assigned to me</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button [disabled]="disableBtns ? true : false" type="button" class="btn btn-dark">
+                            <a class="nav-link text-white" href="#">Priority 1</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
