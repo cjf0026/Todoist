@@ -19,6 +19,9 @@
             <button [disabled]="disableBtns ? true : false" class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
                 Projects
             </button>
+            <button [disabled]="disableBtns ? true : false" class="btn btn-dark" type="button"> 
+                <a class="nav-link text-white" routerLink="/newProject">+</a>
+            </button>
             <div class="collapse show" id="collapseProjects">
                 <ul class="nav flex-column">
                     <li class="nav-item">

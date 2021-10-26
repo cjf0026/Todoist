@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InboxComponent } from './inbox/inbox.component';
 import { TodayComponent } from './today/today.component';
-import { TryBoardsComponent } from './try-boards/try-boards.component';
 import { UpcomingComponent } from './upcoming/upcoming.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { NewProjectComponent } from './new-project/new-project.component';
 
 const routes: Routes = [
   { path: 'inbox', component: InboxComponent },
   { path: 'today', component: TodayComponent },
-  { path: 'try-boards', component: TryBoardsComponent },
   { path: 'upcoming', component: UpcomingComponent },
-  { path: 'welcome', component: WelcomeComponent}
+  { path: 'tasks', component: TasksComponent},
+  { path: 'newProject', component: NewProjectComponent}
 ];
 
 @NgModule({
